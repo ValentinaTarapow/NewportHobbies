@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070f1c" />
+    <meta
+      name="description"
+      content="Catálogo digital de Newport Hobbies. Productos importados, fotografías, variantes de color y consultas de disponibilidad por WhatsApp."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Newport Hobbies" />
+    <meta property="og:title" content="Newport Hobbies · Catálogo de productos importados" />
+    <meta
+      property="og:description"
+      content="Catálogo digital de Newport Hobbies. Productos importados, fotografías, variantes de color y consultas de disponibilidad por WhatsApp."
+    />
+    <link rel="icon" href="%BASE_URL%favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=PT+Sans+Caption:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Newport Hobbies · Catálogo de productos importados</title>
+    <script>
+      ;(function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&")
+            })
+            .join("?")
+          window.history.replaceState(null, "", l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Newport Hobbies. Catálogo de productos importados. Activá JavaScript para ver el sitio.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
