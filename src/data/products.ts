@@ -310,7 +310,7 @@ export const products: Product[] = [
   {
     slug: "cable-hdmi-21",
     name: "Cable HDMI fibra óptica 2.1, 8K 60Hz, 4K 144Hz, 48Gbps",
-    category: "Cables",
+    category: "Tecnología",
     summary: "HDMI 2.1 de fibra óptica activa, en 5, 10 y 15 metros.",
     description:
       "Un cable de **altísima calidad** que es capaz de mantener la mejor calidad incluso en **distancias más largas**. Al ser de **fibra óptica** evita el problema que tienen los cables convencionales donde a partir de los 2/5 mts de largo empiezan a perder calidad por cada nuevo metro que se extienden. A su vez, sus excelentes prestaciones le permiten garantizar una resolución de **8K a 60 Hz** o bien **4K o inferiores a 144 Hz**.\n\nEste cable se vende dentro de una vistosa caja, **¡ideal para regalar dentro del mundo de la tecnología!** Podés ver cómo se ve en la primera imagen.\n\nResoluciones posibles: **8K a 60 Hz**, y **4K o inferiores a 144 Hz**.\n\n¿Sirve para distancias más cortas? Obvio que sí, aunque estarías usando una ferrari para ir al supermercado, podés sacarle más jugo que eso aprovechándolo sin miedo para hacer conexiones más largas, quizás como una computadora y una televisión que están en ambientes separados, o una consola a una tele en la otra punta del cuarto. Podés hacer uso de todo el largo con la tranquilidad de que **no vas a notar la más mínima pérdida de calidad** de imagen y sonido.",
@@ -335,7 +335,7 @@ export const products: Product[] = [
   {
     slug: "cable-hdmi-22",
     name: "Cable HDMI fibra óptica 2.2, 16K 60Hz, 8K 120Hz, 96Gbps, 10 metros",
-    category: "Cables",
+    category: "Tecnología",
     summary: "HDMI 2.2 de fibra óptica, de 10 metros.",
     description:
       "Cable HDMI de fibra óptica, versión 2.2, de 10 metros. Llega a 16K 60Hz y 8K 120Hz, con 96Gbps.",

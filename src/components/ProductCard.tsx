@@ -7,9 +7,10 @@ import { VariantSwatch } from "./VariantSwatch"
 
 type ProductCardProps = {
   product: Product
+  clampName?: boolean
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, clampName = false }: ProductCardProps) {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
   const variant = product.variants[hoverIndex ?? 0]
 
@@ -28,7 +29,9 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
         <div className="flex flex-1 flex-col px-3 pt-3 pb-4">
           <p className="text-[0.62rem] uppercase tracking-[0.18em] text-gold">{product.category}</p>
-          <h2 className="mt-2 font-serif text-lg leading-snug text-ivory">{product.name}</h2>
+          <h2 className={`mt-2 font-serif text-lg leading-snug text-ivory ${clampName ? "line-clamp-3" : ""}`} title={clampName ? product.name : undefined}>
+            {product.name}
+          </h2>
           <p className="mt-3 text-[0.62rem] uppercase tracking-[0.18em] text-muted">Precio</p>
           <p className="mt-1 text-base text-ivory">{formatPrice(priceOf(product, variant))}</p>
           {product.wholesale ? (
