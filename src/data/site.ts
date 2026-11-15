@@ -4,11 +4,8 @@ export const site = {
     "Catálogo digital de Newport Hobbies. Productos importados, fotografías, variantes de color y consultas de disponibilidad por WhatsApp.",
   url: "https://valentintarapow.github.io/NewportHobbies",
   locale: "es_AR",
-  email: "hola@newporthobbies.com",
-  location: "Argentina",
-  // Número internacional, sin + ni espacios. Reemplazar antes de publicar.
-  whatsappNumber: "5491100000000",
-  social: [{ label: "Instagram", href: "https://instagram.com/newporthobbies" }],
+  // Número internacional, sin + ni espacios.
+  whatsappNumber: "5491156035644",
 } as const
 
 export function whatsappLink(message: string) {

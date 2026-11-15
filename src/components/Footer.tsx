@@ -4,7 +4,6 @@ import { formatPhone, site, whatsappLink } from "../data/site"
 const links = [
   { to: "/catalogo", label: "Catálogo" },
   { to: "/como-comprar", label: "Cómo comprar" },
-  { to: "/nosotros", label: "Nosotros" },
   { to: "/contacto", label: "Contacto" },
 ]
 
@@ -28,20 +27,11 @@ export function Footer() {
           >
             {formatPhone(site.whatsappNumber)}
           </a>
-          <a className="text-sm text-muted hover:text-ivory" href={`mailto:${site.email}`}>
-            {site.email}
-          </a>
-          {site.social.map((item) => (
-            <a key={item.label} className="text-sm text-muted hover:text-ivory" href={item.href} target="_blank" rel="noreferrer noopener">
-              {item.label}
-            </a>
-          ))}
         </div>
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex w-full max-w-[1180px] flex-wrap items-center justify-between gap-3 px-5 py-5 text-[0.68rem] uppercase tracking-[0.18em] text-muted sm:px-8">
           <span>Newport Hobbies</span>
-          <span>{site.location}</span>
         </div>
       </div>
     </footer>

@@ -11,7 +11,7 @@ export function ContactPage() {
     <Container className="py-16 lg:py-24">
       <Seo
         title="Contacto"
-        description="Consultas de disponibilidad de Newport Hobbies por WhatsApp, correo y redes."
+        description="Consultas de disponibilidad de Newport Hobbies por WhatsApp."
         path="/contacto"
       />
       <div className="grid gap-16 lg:grid-cols-12">
@@ -35,28 +35,6 @@ export function ContactPage() {
                 {formatPhone(site.whatsappNumber)}
               </a>
             </dd>
-          </div>
-          <div className="border-b border-line py-6">
-            <dt className="text-[0.68rem] uppercase tracking-[0.22em] text-gold">Correo</dt>
-            <dd className="mt-3">
-              <a className="text-lg text-ivory hover:text-gold" href={`mailto:${site.email}`}>
-                {site.email}
-              </a>
-            </dd>
-          </div>
-          <div className="border-b border-line py-6">
-            <dt className="text-[0.68rem] uppercase tracking-[0.22em] text-gold">Redes</dt>
-            <dd className="mt-3 flex flex-col gap-2">
-              {site.social.map((item) => (
-                <a key={item.label} className="text-lg text-ivory hover:text-gold" href={item.href} target="_blank" rel="noreferrer noopener">
-                  {item.label}
-                </a>
-              ))}
-            </dd>
-          </div>
-          <div className="py-6">
-            <dt className="text-[0.68rem] uppercase tracking-[0.22em] text-gold">Lugar</dt>
-            <dd className="mt-3 text-lg text-ivory">{site.location}</dd>
           </div>
         </dl>
       </div>

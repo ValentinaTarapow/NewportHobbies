@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Layout } from "./components/Layout"
-import { AboutPage } from "./pages/AboutPage"
 import { CatalogPage } from "./pages/CatalogPage"
 import { ContactPage } from "./pages/ContactPage"
 import { HomePage } from "./pages/HomePage"
@@ -19,7 +18,6 @@ export default function App() {
           <Route path="catalogo" element={<CatalogPage />} />
           <Route path="como-comprar" element={<HowToBuyPage />} />
           <Route path="producto/:slug" element={<ProductPage />} />
-          <Route path="nosotros" element={<AboutPage />} />
           <Route path="contacto" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
