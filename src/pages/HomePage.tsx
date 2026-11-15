@@ -15,9 +15,6 @@ export function HomePage() {
           <h1 className="font-serif text-[clamp(2.7rem,5.6vw,5.15rem)] font-normal leading-[0.98] text-ivory">
             Newport Hobbies
           </h1>
-          <p className="mt-6 max-w-md text-base leading-relaxed text-muted">
-            Piezas importadas para el mazo, la maqueta y la pantalla. Elegí la tuya.
-          </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link className="btn btn-solid" to="/catalogo">
               Ver catálogo
