@@ -174,7 +174,7 @@ export const products: Product[] = [
     ],
     kind: "storage-box",
     price: 60000,
-    wholesale: { from: 5, unit: "cajas", price: 50000, each: "cada una" },
+    wholesale: { from: 5, unit: "unidades", price: 50000, each: "cada una" },
     variantLabel: "Color",
     variants: [
       {
@@ -231,7 +231,7 @@ export const products: Product[] = [
     ],
     kind: "sleeves",
     price: 9500,
-    wholesale: { from: 20, unit: "packs", price: 7000, each: "cada uno" },
+    wholesale: { from: 20, unit: "unidades", price: 7000, each: "cada una" },
     variantLabel: "Color",
     variants: [
       {
@@ -277,7 +277,7 @@ export const products: Product[] = [
     kind: "book-topper",
     scene: "cafe",
     price: 45000,
-    wholesale: { from: 5, unit: "kits", price: 30000, each: "cada uno" },
+    wholesale: { from: 5, unit: "unidades", price: 30000, each: "cada una" },
     images: ["productos/maqueta-cafe-1.jpg", "productos/maqueta-cafe-2.jpg"],
     variants: [],
   },
