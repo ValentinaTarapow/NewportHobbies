@@ -3,22 +3,23 @@ import { lengthMark, type Variant } from "../data/products"
 type VariantSwatchProps = {
   variant: Variant
   selected?: boolean
+  onLight?: boolean
   className?: string
 }
 
-export function VariantSwatch({ variant, selected = false, className = "size-[18px]" }: VariantSwatchProps) {
+export function VariantSwatch({ variant, selected = false, onLight = false, className = "size-[18px]" }: VariantSwatchProps) {
   if (variant.size) {
     return (
       <span
         aria-hidden="true"
-        className={`text-[0.68rem] tracking-[0.06em] ${selected ? "text-gold" : "text-ivory group-hover/length:text-gold"}`}
+        className={`text-[0.68rem] tracking-[0.06em] ${selected ? "text-gold" : onLight ? "text-carbon" : "text-ivory"} ${onLight ? "" : "group-hover/length:text-gold"}`}
       >
         {lengthMark(variant.name)}
       </span>
     )
   }
 
-  const stroke = selected ? "#B7A276" : "rgba(243,241,236,0.72)"
+  const stroke = selected ? "#B7A276" : onLight ? "rgba(7,15,28,0.7)" : "rgba(243,241,236,0.72)"
   const strokeWidth = selected ? 1.5 : 1.15
 
   return (
