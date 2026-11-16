@@ -324,12 +324,12 @@ export const products: Product[] = [
       "Fibra óptica activa",
     ],
     kind: "hdmi",
-    price: 60700,
+    price: 66500,
     variantLabel: "Largo",
     variants: [
-      { name: "5 metros", primary: "#1c1c1e", secondary: "#b7a276", size: 1, price: 60700, images: hdmi21Photos },
-      { name: "10 metros", primary: "#1c1c1e", secondary: "#b7a276", size: 2, price: 75100, images: hdmi21Photos },
-      { name: "15 metros", primary: "#1c1c1e", secondary: "#b7a276", size: 3, price: 85600, images: hdmi21Photos },
+      { name: "5 metros", primary: "#1c1c1e", secondary: "#b7a276", size: 1, price: 66500, images: hdmi21Photos },
+      { name: "10 metros", primary: "#1c1c1e", secondary: "#b7a276", size: 2, price: 82500, images: hdmi21Photos },
+      { name: "15 metros", primary: "#1c1c1e", secondary: "#b7a276", size: 3, price: 94000, images: hdmi21Photos },
     ],
   },
   {
@@ -341,14 +341,14 @@ export const products: Product[] = [
       "Cable HDMI de fibra óptica, versión 2.2, de 10 metros. Llega a 16K 60Hz y 8K 120Hz, con 96Gbps.",
     features: ["Fibra óptica", "HDMI 2.2", "16K 60Hz y 8K 120Hz", "96Gbps", "10 metros"],
     kind: "hdmi",
-    price: 99500,
+    price: 105000,
     variants: [
       {
         name: "10 metros",
         primary: "#1c1c1e",
         secondary: "#b7a276",
         size: 2,
-        price: 99500,
+        price: 105000,
         images: ["productos/hdmi-22-caja.jpg", "productos/hdmi-22-cable.jpg"],
       },
     ],
